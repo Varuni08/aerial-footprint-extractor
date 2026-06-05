@@ -1,0 +1,5 @@
+content = open('segment.py').read()
+content = content.replace('SAM_MODEL = "vit_h"', 'SAM_MODEL = "vit_b"')
+content = content.replace('SAM_CHECKPOINT = "sam_vit_h_4b8939.pth"', 'SAM_CHECKPOINT = "sam_vit_b_01ec64.pth"')
+open('segment.py', 'w').write(content)
+print('done')
